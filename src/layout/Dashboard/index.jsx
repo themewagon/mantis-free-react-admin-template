@@ -14,6 +14,8 @@ import Loader from 'components/Loader';
 import Breadcrumbs from 'components/@extended/Breadcrumbs';
 
 import { handlerDrawerOpen, useGetMenuMaster } from 'api/menu';
+import { Link, Typography } from '@mui/material';
+import { Stack } from '@mui/system';
 
 // ==============================|| MAIN LAYOUT ||============================== //
 
@@ -36,6 +38,20 @@ export default function DashboardLayout() {
         <Toolbar />
         <Breadcrumbs navigation={navigation} title />
         <Outlet />
+        <Stack direction="row" justifyContent="space-between" alignItems="center">
+          <Typography variant="subtitle2" sx={{ mt: 3, textAlign: 'right' }}>
+            Made with love by Team
+            <Link ml={0.5} href="https://codedthemes.com">
+              CodedThemes
+            </Link>
+          </Typography>
+          <Typography variant="subtitle2" sx={{ mt: 3, textAlign: 'right' }}>
+            Distributed by
+            <Link ml={0.5} href="https://themewagon.com/">
+              ThemeWagon
+            </Link>
+          </Typography>
+        </Stack>
       </Box>
     </Box>
   );
