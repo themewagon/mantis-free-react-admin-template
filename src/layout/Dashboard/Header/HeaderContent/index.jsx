@@ -24,7 +24,7 @@ export default function HeaderContent() {
       {downLG && <Box sx={{ width: '100%', ml: 1 }} />}
       <IconButton
         component={Link}
-        href="https://github.com/codedthemes/mantis-free-react-admin-template"
+        href="https://github.com/themewagon/mantis-free-react-admin-template"
         target="_blank"
         disableRipple
         color="secondary"
